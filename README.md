@@ -1,4 +1,4 @@
-# Niagara Point Validation Tool – Data Center Edition
+# Niagara Point Validation Tool – IN PROGRESS
 
 ## Overview
 This repository contains a Python-based tool for validating **Tridium Niagara**, **Siemens Desigo CC**, and **Schneider EcoStruxure** point configurations in mission-critical **data center environments**. The tool performs automated quality checks on alarms, trends, and naming conventions to ensure compliance with design standards and consistency across systems.
