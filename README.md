@@ -22,7 +22,15 @@ Alarms in a **Tridium Niagara System** are typically configured by dragging and 
 - **Delays**  
 - **High and Low Limits** (for temperature, pressure, etc.)  
 
-These configurations are critical to ensure **Building Operators trust the alarm system**.
+# Importance of Accurate Alarm System Configurations
+
+It is essential that these configurations are implemented **accurately** and in full compliance with the **design requirements**. Proper configuration ensures the alarm system operates as intended, which is critical for:
+
+- **Reliability**: The system must function consistently under all conditions.
+- **Safety**: Incorrect configurations can lead to missed or false alarms, compromising building security.
+- **Trust**: Building Operators rely on the system to protect occupants and assets. Any deviation from the specified design could undermine confidence in its effectiveness.
+
+Failure to adhere to design specifications may result in operational issues, reduced performance, and diminished trust in the alarm system. Therefore, strict compliance with configuration standards is not just a technical requirement—it is a cornerstone of system integrity and operator confidence.
 
 ---
 
