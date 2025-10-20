@@ -1,78 +1,59 @@
 # Niagara Point Validation Tool – IN PROGRESS
 
 ## Overview
-This repository contains a Python-based tool for validating **Tridium Niagara**, **Siemens Desigo CC**, and **Schneider EcoStruxure** point configurations in mission-critical **data center environments**. The tool performs automated quality checks on alarms, trends, and naming conventions to ensure compliance with design standards and consistency across systems.
+This repository contains a Python-based tool for validating **Tridium Niagara** point configurations. The tool performs automated quality checks on alarms, trends, and naming conventions to ensure compliance with design standards and consistency across systems.
 
-It supports both **CSV** and **Excel** report formats exported from BMS systems and outputs consolidated reports highlighting compliance, mismatches, and missing points.
+Alarms in a **Tridium Niagara System** are typically configured by dragging and dropping alarm extensions from the **Alarm Palette**. Common alarm extensions include:
 
----
+- **OutOfRangeAlarmExt**  
+  Used for **Analog Inputs (AI)** and **Analog Values (AV)** such as:
+  - Cold Aisle Temperature Sensors  
+  - Pressure Sensors  
+  - Supply Air Temperature Sensors  
 
-## Features
+- **BooleanChangeOfStateAlarmExt**  
+  Used for **Binary Inputs (BI)** and **Binary Values (BV)** such as:
+  - Power Fail Alarm  
+  - Fan Trip Alarm  
+  - Chiller Trip Alarm  
 
-- **Supports Multiple Vendors:** Siemens Desigo CC, Schneider EcoStruxure, and Tridium Niagara.
-- **Comprehensive Validation:** Checks alarm extensions, notification levels, delays, and trend intervals against the CDE (Construction Data Exchange) point list.
-- **Automatic Compliance Reporting:** Generates Excel-based reports with color-coded highlights for mismatched or missing configurations.
-- **GUI-Based Operation:** Built using PySimpleGUI, allowing non-technical users to run validations easily.
-- **Visualization:** Produces pie charts summarizing compliance percentages.
+### Key Alarm Configurations
+- **Notification Class**: `Critical`, `High`, `Medium`, `Low`  
+- **Delays**  
+- **High and Low Limits** (for temperature, pressure, etc.)  
 
----
-
-## Typical Niagara Database Configurations in Data Centers
-
-### Siemens (Desigo CC / PX Controllers)
-
-#### Architecture
-- PX series controllers (PXC, PXM) connect via **BACnet/IP**.
-- Niagara integrates as a supervisory or aggregation layer.
-- Data points: **AI**, **AO**, **BI**, **BO**, and **MV** objects.
-
-#### Niagara Station Organization
-| Component | Description |
-|------------|-------------|
-| **Folder Structure** | Organized by equipment: `AHU`, `CRAH`, `CHWS`, `ER`, `PUMP`, etc. |
-| **Point Naming Convention** | `<System>_<Equipment>_<PointName>` (e.g., `AHU01_SupplyTemp`, `CRAH03_ValveCmd`). |
-| **Trends** | Standard Niagara trend extensions, typically 5–15 minutes or COV. |
-| **Alarms** | Inherited from PX metadata; managed through Niagara’s `BAlarm` service. |
-| **Schedules** | Managed with `BSchedule` objects and PX mappings. |
-
-#### Integration Notes
-- Ensure BACnet Network Numbers are unique between Niagara and Desigo CC.
-- Use Priority Levels 8–10 for Niagara supervisory writes.
-- Align trend intervals and units across PX and Niagara databases.
+These configurations are critical to ensure **Building Operators trust the alarm system**.
 
 ---
 
-### Schneider (EcoStruxure / SmartX Controllers)
+## Validation Workflow
 
-#### Architecture
-- SmartX AS-P and AS-B controllers communicate over **BACnet/IP**.
-- Schneider’s EBO holds the native configuration; Niagara serves as a secondary supervisory or analytics layer.
+Follow these steps to validate Tridium Niagara alarms and trends:
 
-#### Niagara Station Organization
-| Component | Description |
-|------------|-------------|
-| **Folder Structure** | Grouped by zone or function (e.g., `AHU`, `CRAH`, `UPS`, `ER`). |
-| **Point Naming Convention** | `<Equipment>_<Function>` (e.g., `CRAH02_SupplyTemp`, `UPS01_Status`). |
-| **Alarms** | Imported using BACnet Notification Class mapping or local alarm service. |
-| **Trends** | Configurable per site; typically 1–5 minutes. |
-| **Schedules** | Usually managed from EBO or DCIM. |
+### 1. Database Setup
+Ensure that **control point names** in the Tridium N4 database include the strings from the **Point Name** column in the **Construction Data Exchange List**.
 
-#### Integration Notes
-- Validate Notification Class IDs and COV increments during import.
-- Niagara can poll via BACnet/IP or Modbus TCP depending on exposed objects.
-- Mirror or subscribe to Schneider alarms to ensure synchronization.
+### 2. Extract Configuration Data
+- Write **BQL Queries** to pull **Alarm** and **Trend** configuration data from the Tridium Niagara database.
+- Export the **as-built alarm and trend configuration data** as **CSV files**.
+
+### 3. Run Validation Script
+- Feed the extracted CSV files into the **Niagara Validation Script**.
+- The script generates an **Excel report** with color-coded results:
+
+| Color   | Meaning                                                                 |
+|---------|-------------------------------------------------------------------------|
+| **Red**    | Alarm attribute does **NOT** match design requirements (e.g., Notification Class) |
+| **Yellow** | Alarm attribute could **NOT** be validated by the tool             |
+| **Green**  | Alarm attribute is validated and matches design requirements        |
 
 ---
 
-## Common Niagara Best Practices for Data Centers
-
-| Area | Best Practice |
-|------|----------------|
-| **Tagging** | Use Haystack tags (`equip`, `zone`, `point`, `siteRef`) for semantic consistency. |
-| **Alarming** | Define standard levels: Critical (CR), Major (MJ), Minor (MN), Info (IN). |
-| **Trend Retention** | Store local histories (180 days) before archiving to SQL or cloud. |
-| **Network Design** | Place Niagara and controllers on a dedicated OT VLAN for isolation. |
-| **Validation Scripts** | Use `niagara_point_validation.py` to compare points and detect discrepancies. |
+## Example Output
+The validation report will help identify:
+- Misconfigured alarms
+- Attributes that need manual review
+- Fully compliant configurations
 
 ---
 
