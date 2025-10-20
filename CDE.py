@@ -49,17 +49,36 @@ def split_point_names(input_file, output_file):
         dicT= {key : value} 
         list1=[]
         list2.append(dicT)
-    print(list2)
+    #print(list2)
+    list102=[]
+    list101=[]
+    for index in range(len(list2)):
+        for i,x in enumerate (list2[index][key]):
+            if (x == ''):
+                if(i <= len(list2[index][key])):
+                    list101.append(i)
+        list2[index][key] = np.delete((list2[index][key]),list101).tolist()
+        list101=[]
+    # print(list2)
 
-    
+    list_pts=[]
+    for dicts in list2:
+        for eqpt,points in dicts.items():
+            list_pts.append(points) 
+    print(list_pts)
+
+    # Creating the list of Data Frames
+
+    list1=[]
+    list_points_DAHU=[]
+    for lst in list_pts:
+        list1 = ''.join(lst)
+        list_points_DAHU.append(list1)
+    print(list_points_DAHU)
 
     # Save to a new Excel file
     split_df_1.to_excel(output_file, index=False)
     print(f"Split data saved to {output_file}")
-
-    
-    
-
 
 # Example usage:
 #split_point_names('C:\GHUFRAN\Old\PythonScripting\Niagara\Evap_Cooler_Points.xlsx', 'C:\GHUFRAN\Old\PythonScripting\Niagara\Evap_Cooler_Points_1.xlsx')
