@@ -1,0 +1,230 @@
+Equipment,Point_Name,Alarm_Extension,Alarm_Class,Alarm_Type,Delay,offNormal_Text,Normal_Text
+AHU1,AHU1_EVAP1_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 1 Flow Alarm - NORMAL
+AHU1,AHU1_EVAP1_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 2 Flow Alarm - NORMAL
+AHU1,AHU1_EVAP2_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 1 Flow Alarm - NORMAL
+AHU1,AHU1_EVAP2_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 2 Flow Alarm - NORMAL
+AHU1,AHU1_BMS_SAT_STPT_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Supply Air Temp Setpoint Alarm - OUT OF RANGE,Supply Air Temp Setpoint Alarm - NORMAL
+AHU1,AHU1_BMS_SF_SPD_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Fan Speed Alarm - OUT OF RANGE,Supply Fan Speed Alarm - NORMAL
+AHU1,AHU1_BYPD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,60,Bypass Damper Lower Limit Alarm - OUT OF RANGE,Bypass Damper Lower Limit Alarm - NORMAL
+AHU1,AHU1_BYPD_UPPER_ALM,OutOfRangeAlarmExt,High,OutOfRange,60,Bypass Damper Upper Limit Alarm - OUT OF RANGE,Bypass Damper Upper Limit Alarm - NORMAL
+AHU1,AHU1_EVAP_HIGH_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P High Water Alarm - OUT OF RANGE,Evaporative Cooler P High Water Alarm - NORMAL
+AHU1,AHU1_EVAP_LOW_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P Low Water Alarm - OUT OF RANGE,Evaporative Cooler P Low Water Alarm - NORMAL
+AHU1,AHU1_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Filter Differential Pressure Alarm - OUT OF RANGE,Filter Differential Pressure Alarm - NORMAL
+AHU1,AHU1_SAD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Damper Lower Limit Alarm - OUT OF RANGE,Supply Air Damper Lower Limit Alarm - NORMAL
+AHU1,AHU1_SAD_UPPER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Damper Upper Limit Alarm - OUT OF RANGE,Supply Air Damper Upper Limit Alarm - NORMAL
+AHU1,AHU1_SAT_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Temp High Alarm - OUT OF RANGE,Supply Air Temp High Alarm - NORMAL
+AHU1,AHU1_SAT_LOW_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Temp Low Alarm - OUT OF RANGE,Supply Air Temp Low Alarm - NORMAL
+AHU1,AHU1_SUMP1_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU1,AHU1_SUMP1_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU1,AHU1_SUMP2_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU1,AHU1_SUMP2_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU2,AHU2_EVAP1_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 1 Flow Alarm - NORMAL
+AHU2,AHU2_EVAP1_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 2 Flow Alarm - NORMAL
+AHU2,AHU2_EVAP2_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 1 Flow Alarm - NORMAL
+AHU2,AHU2_EVAP2_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 2 Flow Alarm - NORMAL
+AHU2,AHU2_BMS_SAT_STPT_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Supply Air Temp Setpoint Alarm - OUT OF RANGE,Supply Air Temp Setpoint Alarm - NORMAL
+AHU2,AHU2_BMS_SF_SPD_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Fan Speed Alarm - OUT OF RANGE,Supply Fan Speed Alarm - NORMAL
+AHU2,AHU2_BYPD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,60,Bypass Damper Lower Limit Alarm - OUT OF RANGE,Bypass Damper Lower Limit Alarm - NORMAL
+AHU2,AHU2_BYPD_UPPER_ALM,OutOfRangeAlarmExt,High,OutOfRange,60,Bypass Damper Upper Limit Alarm - OUT OF RANGE,Bypass Damper Upper Limit Alarm - NORMAL
+AHU2,AHU2_EVAP_HIGH_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P High Water Alarm - OUT OF RANGE,Evaporative Cooler P High Water Alarm - NORMAL
+AHU2,AHU2_EVAP_LOW_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P Low Water Alarm - OUT OF RANGE,Evaporative Cooler P Low Water Alarm - NORMAL
+AHU2,AHU2_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Filter Differential Pressure Alarm - OUT OF RANGE,Filter Differential Pressure Alarm - NORMAL
+AHU2,AHU2_SAD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Damper Lower Limit Alarm - OUT OF RANGE,Supply Air Damper Lower Limit Alarm - NORMAL
+AHU2,AHU2_SAD_UPPER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Damper Upper Limit Alarm - OUT OF RANGE,Supply Air Damper Upper Limit Alarm - NORMAL
+AHU2,AHU2_SAT_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Temp High Alarm - OUT OF RANGE,Supply Air Temp High Alarm - NORMAL
+AHU2,AHU2_SAT_LOW_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Temp Low Alarm - OUT OF RANGE,Supply Air Temp Low Alarm - NORMAL
+AHU2,AHU2_SUMP1_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU2,AHU2_SUMP1_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU2,AHU2_SUMP2_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU2,AHU2_SUMP2_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU3,AHU3_EVAP1_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 1 Flow Alarm - NORMAL
+AHU3,AHU3_EVAP1_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 2 Flow Alarm - NORMAL
+AHU3,AHU3_EVAP2_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 1 Flow Alarm - NORMAL
+AHU3,AHU3_EVAP2_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 2 Flow Alarm - NORMAL
+AHU3,AHU3_BMS_SAT_STPT_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Supply Air Temp Setpoint Alarm - OUT OF RANGE,Supply Air Temp Setpoint Alarm - NORMAL
+AHU3,AHU3_BMS_SF_SPD_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Fan Speed Alarm - OUT OF RANGE,Supply Fan Speed Alarm - NORMAL
+AHU3,AHU3_BYPD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,60,Bypass Damper Lower Limit Alarm - OUT OF RANGE,Bypass Damper Lower Limit Alarm - NORMAL
+AHU3,AHU3_BYPD_UPPER_ALM,OutOfRangeAlarmExt,High,OutOfRange,60,Bypass Damper Upper Limit Alarm - OUT OF RANGE,Bypass Damper Upper Limit Alarm - NORMAL
+AHU3,AHU3_EVAP_HIGH_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P High Water Alarm - OUT OF RANGE,Evaporative Cooler P High Water Alarm - NORMAL
+AHU3,AHU3_EVAP_LOW_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P Low Water Alarm - OUT OF RANGE,Evaporative Cooler P Low Water Alarm - NORMAL
+AHU3,AHU3_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Filter Differential Pressure Alarm - OUT OF RANGE,Filter Differential Pressure Alarm - NORMAL
+AHU3,AHU3_SAD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Damper Lower Limit Alarm - OUT OF RANGE,Supply Air Damper Lower Limit Alarm - NORMAL
+AHU3,AHU3_SAD_UPPER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Damper Upper Limit Alarm - OUT OF RANGE,Supply Air Damper Upper Limit Alarm - NORMAL
+AHU3,AHU3_SAT_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Temp High Alarm - OUT OF RANGE,Supply Air Temp High Alarm - NORMAL
+AHU3,AHU3_SAT_LOW_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Temp Low Alarm - OUT OF RANGE,Supply Air Temp Low Alarm - NORMAL
+AHU3,AHU3_SUMP1_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU3,AHU3_SUMP1_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU3,AHU3_SUMP2_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU3,AHU3_SUMP2_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU4,AHU4_EVAP1_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 1 Flow Alarm - NORMAL
+AHU4,AHU4_EVAP1_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 2 Flow Alarm - NORMAL
+AHU4,AHU4_EVAP2_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 1 Flow Alarm - NORMAL
+AHU4,AHU4_EVAP2_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 2 Flow Alarm - NORMAL
+AHU4,AHU4_BMS_SAT_STPT_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Supply Air Temp Setpoint Alarm - OUT OF RANGE,Supply Air Temp Setpoint Alarm - NORMAL
+AHU4,AHU4_BMS_SF_SPD_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Fan Speed Alarm - OUT OF RANGE,Supply Fan Speed Alarm - NORMAL
+AHU4,AHU4_BYPD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,60,Bypass Damper Lower Limit Alarm - OUT OF RANGE,Bypass Damper Lower Limit Alarm - NORMAL
+AHU4,AHU4_BYPD_UPPER_ALM,OutOfRangeAlarmExt,High,OutOfRange,60,Bypass Damper Upper Limit Alarm - OUT OF RANGE,Bypass Damper Upper Limit Alarm - NORMAL
+AHU4,AHU4_EVAP_HIGH_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P High Water Alarm - OUT OF RANGE,Evaporative Cooler P High Water Alarm - NORMAL
+AHU4,AHU4_EVAP_LOW_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P Low Water Alarm - OUT OF RANGE,Evaporative Cooler P Low Water Alarm - NORMAL
+AHU4,AHU4_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Filter Differential Pressure Alarm - OUT OF RANGE,Filter Differential Pressure Alarm - NORMAL
+AHU4,AHU4_SAD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Damper Lower Limit Alarm - OUT OF RANGE,Supply Air Damper Lower Limit Alarm - NORMAL
+AHU4,AHU4_SAD_UPPER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Damper Upper Limit Alarm - OUT OF RANGE,Supply Air Damper Upper Limit Alarm - NORMAL
+AHU4,AHU4_SAT_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Temp High Alarm - OUT OF RANGE,Supply Air Temp High Alarm - NORMAL
+AHU4,AHU4_SAT_LOW_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Temp Low Alarm - OUT OF RANGE,Supply Air Temp Low Alarm - NORMAL
+AHU4,AHU4_SUMP1_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU4,AHU4_SUMP1_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU4,AHU4_SUMP2_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU4,AHU4_SUMP2_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU5,AHU5_EVAP1_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 1 Flow Alarm - NORMAL
+AHU5,AHU5_EVAP1_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 2 Flow Alarm - NORMAL
+AHU5,AHU5_EVAP2_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 1 Flow Alarm - NORMAL
+AHU5,AHU5_EVAP2_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 2 Flow Alarm - NORMAL
+AHU5,AHU5_BMS_SAT_STPT_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Supply Air Temp Setpoint Alarm - OUT OF RANGE,Supply Air Temp Setpoint Alarm - NORMAL
+AHU5,AHU5_BMS_SF_SPD_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Fan Speed Alarm - OUT OF RANGE,Supply Fan Speed Alarm - NORMAL
+AHU5,AHU5_BYPD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,60,Bypass Damper Lower Limit Alarm - OUT OF RANGE,Bypass Damper Lower Limit Alarm - NORMAL
+AHU5,AHU5_BYPD_UPPER_ALM,OutOfRangeAlarmExt,High,OutOfRange,60,Bypass Damper Upper Limit Alarm - OUT OF RANGE,Bypass Damper Upper Limit Alarm - NORMAL
+AHU5,AHU5_EVAP_HIGH_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P High Water Alarm - OUT OF RANGE,Evaporative Cooler P High Water Alarm - NORMAL
+AHU5,AHU5_EVAP_LOW_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P Low Water Alarm - OUT OF RANGE,Evaporative Cooler P Low Water Alarm - NORMAL
+AHU5,AHU5_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Filter Differential Pressure Alarm - OUT OF RANGE,Filter Differential Pressure Alarm - NORMAL
+AHU5,AHU5_SAD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Damper Lower Limit Alarm - OUT OF RANGE,Supply Air Damper Lower Limit Alarm - NORMAL
+AHU5,AHU5_SAD_UPPER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Damper Upper Limit Alarm - OUT OF RANGE,Supply Air Damper Upper Limit Alarm - NORMAL
+AHU5,AHU5_SAT_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Temp High Alarm - OUT OF RANGE,Supply Air Temp High Alarm - NORMAL
+AHU5,AHU5_SAT_LOW_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Temp Low Alarm - OUT OF RANGE,Supply Air Temp Low Alarm - NORMAL
+AHU5,AHU5_SUMP1_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU5,AHU5_SUMP1_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU5,AHU5_SUMP2_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU5,AHU5_SUMP2_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU6,AHU6_EVAP1_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 1 Flow Alarm - NORMAL
+AHU6,AHU6_EVAP1_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 2 Flow Alarm - NORMAL
+AHU6,AHU6_EVAP2_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 1 Flow Alarm - NORMAL
+AHU6,AHU6_EVAP2_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 2 Flow Alarm - NORMAL
+AHU6,AHU6_BMS_SAT_STPT_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Supply Air Temp Setpoint Alarm - OUT OF RANGE,Supply Air Temp Setpoint Alarm - NORMAL
+AHU6,AHU6_BMS_SF_SPD_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Fan Speed Alarm - OUT OF RANGE,Supply Fan Speed Alarm - NORMAL
+AHU6,AHU6_BYPD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,60,Bypass Damper Lower Limit Alarm - OUT OF RANGE,Bypass Damper Lower Limit Alarm - NORMAL
+AHU6,AHU6_BYPD_UPPER_ALM,OutOfRangeAlarmExt,High,OutOfRange,60,Bypass Damper Upper Limit Alarm - OUT OF RANGE,Bypass Damper Upper Limit Alarm - NORMAL
+AHU6,AHU6_EVAP_HIGH_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P High Water Alarm - OUT OF RANGE,Evaporative Cooler P High Water Alarm - NORMAL
+AHU6,AHU6_EVAP_LOW_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P Low Water Alarm - OUT OF RANGE,Evaporative Cooler P Low Water Alarm - NORMAL
+AHU6,AHU6_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Filter Differential Pressure Alarm - OUT OF RANGE,Filter Differential Pressure Alarm - NORMAL
+AHU6,AHU6_SAD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Damper Lower Limit Alarm - OUT OF RANGE,Supply Air Damper Lower Limit Alarm - NORMAL
+AHU6,AHU6_SAD_UPPER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Damper Upper Limit Alarm - OUT OF RANGE,Supply Air Damper Upper Limit Alarm - NORMAL
+AHU6,AHU6_SAT_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Temp High Alarm - OUT OF RANGE,Supply Air Temp High Alarm - NORMAL
+AHU6,AHU6_SAT_LOW_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Temp Low Alarm - OUT OF RANGE,Supply Air Temp Low Alarm - NORMAL
+AHU6,AHU6_SUMP1_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU6,AHU6_SUMP1_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU6,AHU6_SUMP2_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU6,AHU6_SUMP2_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU7,AHU7_EVAP1_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 1 Flow Alarm - NORMAL
+AHU7,AHU7_EVAP1_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 2 Flow Alarm - NORMAL
+AHU7,AHU7_EVAP2_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 1 Flow Alarm - NORMAL
+AHU7,AHU7_EVAP2_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 2 Flow Alarm - NORMAL
+AHU7,AHU7_BMS_SAT_STPT_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Supply Air Temp Setpoint Alarm - OUT OF RANGE,Supply Air Temp Setpoint Alarm - NORMAL
+AHU7,AHU7_BMS_SF_SPD_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Fan Speed Alarm - OUT OF RANGE,Supply Fan Speed Alarm - NORMAL
+AHU7,AHU7_BYPD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,60,Bypass Damper Lower Limit Alarm - OUT OF RANGE,Bypass Damper Lower Limit Alarm - NORMAL
+AHU7,AHU7_BYPD_UPPER_ALM,OutOfRangeAlarmExt,High,OutOfRange,60,Bypass Damper Upper Limit Alarm - OUT OF RANGE,Bypass Damper Upper Limit Alarm - NORMAL
+AHU7,AHU7_EVAP_HIGH_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P High Water Alarm - OUT OF RANGE,Evaporative Cooler P High Water Alarm - NORMAL
+AHU7,AHU7_EVAP_LOW_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P Low Water Alarm - OUT OF RANGE,Evaporative Cooler P Low Water Alarm - NORMAL
+AHU7,AHU7_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Filter Differential Pressure Alarm - OUT OF RANGE,Filter Differential Pressure Alarm - NORMAL
+AHU7,AHU7_SAD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Damper Lower Limit Alarm - OUT OF RANGE,Supply Air Damper Lower Limit Alarm - NORMAL
+AHU7,AHU7_SAD_UPPER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Damper Upper Limit Alarm - OUT OF RANGE,Supply Air Damper Upper Limit Alarm - NORMAL
+AHU7,AHU7_SAT_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Temp High Alarm - OUT OF RANGE,Supply Air Temp High Alarm - NORMAL
+AHU7,AHU7_SAT_LOW_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Temp Low Alarm - OUT OF RANGE,Supply Air Temp Low Alarm - NORMAL
+AHU7,AHU7_SUMP1_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU7,AHU7_SUMP1_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU7,AHU7_SUMP2_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU7,AHU7_SUMP2_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU8,AHU8_EVAP1_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 1 Flow Alarm - NORMAL
+AHU8,AHU8_EVAP1_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 2 Flow Alarm - NORMAL
+AHU8,AHU8_EVAP2_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 1 Flow Alarm - NORMAL
+AHU8,AHU8_EVAP2_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 2 Flow Alarm - NORMAL
+AHU8,AHU8_BMS_SAT_STPT_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Supply Air Temp Setpoint Alarm - OUT OF RANGE,Supply Air Temp Setpoint Alarm - NORMAL
+AHU8,AHU8_BMS_SF_SPD_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Fan Speed Alarm - OUT OF RANGE,Supply Fan Speed Alarm - NORMAL
+AHU8,AHU8_BYPD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,60,Bypass Damper Lower Limit Alarm - OUT OF RANGE,Bypass Damper Lower Limit Alarm - NORMAL
+AHU8,AHU8_BYPD_UPPER_ALM,OutOfRangeAlarmExt,High,OutOfRange,60,Bypass Damper Upper Limit Alarm - OUT OF RANGE,Bypass Damper Upper Limit Alarm - NORMAL
+AHU8,AHU8_EVAP_HIGH_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P High Water Alarm - OUT OF RANGE,Evaporative Cooler P High Water Alarm - NORMAL
+AHU8,AHU8_EVAP_LOW_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P Low Water Alarm - OUT OF RANGE,Evaporative Cooler P Low Water Alarm - NORMAL
+AHU8,AHU8_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Filter Differential Pressure Alarm - OUT OF RANGE,Filter Differential Pressure Alarm - NORMAL
+AHU8,AHU8_SAD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Damper Lower Limit Alarm - OUT OF RANGE,Supply Air Damper Lower Limit Alarm - NORMAL
+AHU8,AHU8_SAD_UPPER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Damper Upper Limit Alarm - OUT OF RANGE,Supply Air Damper Upper Limit Alarm - NORMAL
+AHU8,AHU8_SAT_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Temp High Alarm - OUT OF RANGE,Supply Air Temp High Alarm - NORMAL
+AHU8,AHU8_SAT_LOW_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Temp Low Alarm - OUT OF RANGE,Supply Air Temp Low Alarm - NORMAL
+AHU8,AHU8_SUMP1_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU8,AHU8_SUMP1_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU8,AHU8_SUMP2_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU8,AHU8_SUMP2_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU9,AHU9_EVAP1_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 1 Flow Alarm - NORMAL
+AHU9,AHU9_EVAP1_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 2 Flow Alarm - NORMAL
+AHU9,AHU9_EVAP2_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 1 Flow Alarm - NORMAL
+AHU9,AHU9_EVAP2_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 2 Flow Alarm - NORMAL
+AHU9,AHU9_BMS_SAT_STPT_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Supply Air Temp Setpoint Alarm - OUT OF RANGE,Supply Air Temp Setpoint Alarm - NORMAL
+AHU9,AHU9_BMS_SF_SPD_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Fan Speed Alarm - OUT OF RANGE,Supply Fan Speed Alarm - NORMAL
+AHU9,AHU9_BYPD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,60,Bypass Damper Lower Limit Alarm - OUT OF RANGE,Bypass Damper Lower Limit Alarm - NORMAL
+AHU9,AHU9_BYPD_UPPER_ALM,OutOfRangeAlarmExt,High,OutOfRange,60,Bypass Damper Upper Limit Alarm - OUT OF RANGE,Bypass Damper Upper Limit Alarm - NORMAL
+AHU9,AHU9_EVAP_HIGH_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P High Water Alarm - OUT OF RANGE,Evaporative Cooler P High Water Alarm - NORMAL
+AHU9,AHU9_EVAP_LOW_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P Low Water Alarm - OUT OF RANGE,Evaporative Cooler P Low Water Alarm - NORMAL
+AHU9,AHU9_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Filter Differential Pressure Alarm - OUT OF RANGE,Filter Differential Pressure Alarm - NORMAL
+AHU9,AHU9_SAD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Damper Lower Limit Alarm - OUT OF RANGE,Supply Air Damper Lower Limit Alarm - NORMAL
+AHU9,AHU9_SAD_UPPER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Damper Upper Limit Alarm - OUT OF RANGE,Supply Air Damper Upper Limit Alarm - NORMAL
+AHU9,AHU9_SAT_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Temp High Alarm - OUT OF RANGE,Supply Air Temp High Alarm - NORMAL
+AHU9,AHU9_SAT_LOW_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Temp Low Alarm - OUT OF RANGE,Supply Air Temp Low Alarm - NORMAL
+AHU9,AHU9_SUMP1_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU9,AHU9_SUMP1_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU9,AHU9_SUMP2_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU9,AHU9_SUMP2_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU10,AHU10_EVAP1_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 1 Flow Alarm - NORMAL
+AHU10,AHU10_EVAP1_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 1 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 1 Stage 2 Flow Alarm - NORMAL
+AHU10,AHU10_EVAP2_STG1_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 1 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 1 Flow Alarm - NORMAL
+AHU10,AHU10_EVAP2_STG2_FLOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler 2 Stage 2 Flow Alarm - OUT OF RANGE,Evaporative Cooler 2 Stage 2 Flow Alarm - NORMAL
+AHU10,AHU10_BMS_SAT_STPT_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Supply Air Temp Setpoint Alarm - OUT OF RANGE,Supply Air Temp Setpoint Alarm - NORMAL
+AHU10,AHU10_BMS_SF_SPD_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Fan Speed Alarm - OUT OF RANGE,Supply Fan Speed Alarm - NORMAL
+AHU10,AHU10_BYPD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,60,Bypass Damper Lower Limit Alarm - OUT OF RANGE,Bypass Damper Lower Limit Alarm - NORMAL
+AHU10,AHU10_BYPD_UPPER_ALM,OutOfRangeAlarmExt,High,OutOfRange,60,Bypass Damper Upper Limit Alarm - OUT OF RANGE,Bypass Damper Upper Limit Alarm - NORMAL
+AHU10,AHU10_EVAP_HIGH_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P High Water Alarm - OUT OF RANGE,Evaporative Cooler P High Water Alarm - NORMAL
+AHU10,AHU10_EVAP_LOW_WATER_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Evaporative Cooler P Low Water Alarm - OUT OF RANGE,Evaporative Cooler P Low Water Alarm - NORMAL
+AHU10,AHU10_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Filter Differential Pressure Alarm - OUT OF RANGE,Filter Differential Pressure Alarm - NORMAL
+AHU10,AHU10_SAD_LOWER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Damper Lower Limit Alarm - OUT OF RANGE,Supply Air Damper Lower Limit Alarm - NORMAL
+AHU10,AHU10_SAD_UPPER_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Damper Upper Limit Alarm - OUT OF RANGE,Supply Air Damper Upper Limit Alarm - NORMAL
+AHU10,AHU10_SAT_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Supply Air Temp High Alarm - OUT OF RANGE,Supply Air Temp High Alarm - NORMAL
+AHU10,AHU10_SAT_LOW_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Supply Air Temp Low Alarm - OUT OF RANGE,Supply Air Temp Low Alarm - NORMAL
+AHU10,AHU10_SUMP1_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU10,AHU10_SUMP1_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+AHU10,AHU10_SUMP2_HI_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Level Alarm - OUT OF RANGE,Level Alarm - NORMAL
+AHU10,AHU10_SUMP2_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Low Level Alarm - OUT OF RANGE,Low Level Alarm - NORMAL
+DAHU1,DAHU1_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Dedicated AHU Filter Differential Pressure Alarm - OUT OF RANGE,Dedicated AHU Filter Differential Pressure Alarm - NORMAL
+DAHU1,DAHU1_SAT_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Dedicated AHU Supply Air Temp High Alarm - OUT OF RANGE,Dedicated AHU Supply Air Temp High Alarm - NORMAL
+DAHU2,DAHU2_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Dedicated AHU Filter Differential Pressure Alarm - OUT OF RANGE,Dedicated AHU Filter Differential Pressure Alarm - NORMAL
+DAHU2,DAHU2_SAT_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Dedicated AHU Supply Air Temp High Alarm - OUT OF RANGE,Dedicated AHU Supply Air Temp High Alarm - NORMAL
+DAHU3,DAHU3_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Dedicated AHU Filter Differential Pressure Alarm - OUT OF RANGE,Dedicated AHU Filter Differential Pressure Alarm - NORMAL
+DAHU3,DAHU3_SAT_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Dedicated AHU Supply Air Temp High Alarm - OUT OF RANGE,Dedicated AHU Supply Air Temp High Alarm - NORMAL
+DAHU4,DAHU4_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Dedicated AHU Filter Differential Pressure Alarm - OUT OF RANGE,Dedicated AHU Filter Differential Pressure Alarm - NORMAL
+DAHU4,DAHU4_SAT_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Dedicated AHU Supply Air Temp High Alarm - OUT OF RANGE,Dedicated AHU Supply Air Temp High Alarm - NORMAL
+DAHU5,DAHU5_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Dedicated AHU Filter Differential Pressure Alarm - OUT OF RANGE,Dedicated AHU Filter Differential Pressure Alarm - NORMAL
+DAHU5,DAHU5_SAT_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Dedicated AHU Supply Air Temp High Alarm - OUT OF RANGE,Dedicated AHU Supply Air Temp High Alarm - NORMAL
+IWS1,IWS1_TANK_HIGH_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Industrial Water Tank High Level Alarm - OUT OF RANGE,Industrial Water Tank High Level Alarm - NORMAL
+IWS1,IWS1_TANK_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Industrial Water Tank Low Level Alarm - OUT OF RANGE,Industrial Water Tank Low Level Alarm - NORMAL
+IWS1,IWS1_FLOW_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Industrial Water Flow Alarm - OUT OF RANGE,Industrial Water Flow Alarm - NORMAL
+IWS1,IWS1_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Industrial Water Filter Differential Pressure Alarm - OUT OF RANGE,Industrial Water Filter Differential Pressure Alarm - NORMAL
+IWS1,IWS1_SUPPLY_PRESSURE_LOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Industrial Water Supply Pressure Low Alarm - OUT OF RANGE,Industrial Water Supply Pressure Low Alarm - NORMAL
+IWS2,IWS2_TANK_HIGH_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Industrial Water Tank High Level Alarm - OUT OF RANGE,Industrial Water Tank High Level Alarm - NORMAL
+IWS2,IWS2_TANK_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Industrial Water Tank Low Level Alarm - OUT OF RANGE,Industrial Water Tank Low Level Alarm - NORMAL
+IWS2,IWS2_FLOW_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Industrial Water Flow Alarm - OUT OF RANGE,Industrial Water Flow Alarm - NORMAL
+IWS2,IWS2_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Industrial Water Filter Differential Pressure Alarm - OUT OF RANGE,Industrial Water Filter Differential Pressure Alarm - NORMAL
+IWS2,IWS2_SUPPLY_PRESSURE_LOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Industrial Water Supply Pressure Low Alarm - OUT OF RANGE,Industrial Water Supply Pressure Low Alarm - NORMAL
+IWS3,IWS3_TANK_HIGH_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Industrial Water Tank High Level Alarm - OUT OF RANGE,Industrial Water Tank High Level Alarm - NORMAL
+IWS3,IWS3_TANK_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Industrial Water Tank Low Level Alarm - OUT OF RANGE,Industrial Water Tank Low Level Alarm - NORMAL
+IWS3,IWS3_FLOW_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Industrial Water Flow Alarm - OUT OF RANGE,Industrial Water Flow Alarm - NORMAL
+IWS3,IWS3_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Industrial Water Filter Differential Pressure Alarm - OUT OF RANGE,Industrial Water Filter Differential Pressure Alarm - NORMAL
+IWS3,IWS3_SUPPLY_PRESSURE_LOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Industrial Water Supply Pressure Low Alarm - OUT OF RANGE,Industrial Water Supply Pressure Low Alarm - NORMAL
+IWS4,IWS4_TANK_HIGH_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Industrial Water Tank High Level Alarm - OUT OF RANGE,Industrial Water Tank High Level Alarm - NORMAL
+IWS4,IWS4_TANK_LOW_LVL_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Industrial Water Tank Low Level Alarm - OUT OF RANGE,Industrial Water Tank Low Level Alarm - NORMAL
+IWS4,IWS4_FLOW_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Industrial Water Flow Alarm - OUT OF RANGE,Industrial Water Flow Alarm - NORMAL
+IWS4,IWS4_FILDP_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Industrial Water Filter Differential Pressure Alarm - OUT OF RANGE,Industrial Water Filter Differential Pressure Alarm - NORMAL
+IWS4,IWS4_SUPPLY_PRESSURE_LOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,5,Industrial Water Supply Pressure Low Alarm - OUT OF RANGE,Industrial Water Supply Pressure Low Alarm - NORMAL
+ELEC1,ELEC1_ROOM_TEMP_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Room Temperature High Alarm - OUT OF RANGE,Room Temperature High Alarm - NORMAL
+ELEC1,ELEC1_BATTERY_LOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,10,Battery Low Alarm - OUT OF RANGE,Battery Low Alarm - NORMAL
+ELEC1,ELEC1_SPD_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Surge Protection Device Alarm - OUT OF RANGE,Surge Protection Device Alarm - NORMAL
+ELEC2,ELEC2_ROOM_TEMP_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Room Temperature High Alarm - OUT OF RANGE,Room Temperature High Alarm - NORMAL
+ELEC2,ELEC2_BATTERY_LOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,10,Battery Low Alarm - OUT OF RANGE,Battery Low Alarm - NORMAL
+ELEC2,ELEC2_SPD_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Surge Protection Device Alarm - OUT OF RANGE,Surge Protection Device Alarm - NORMAL
+ELEC3,ELEC3_ROOM_TEMP_HIGH_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,30,Room Temperature High Alarm - OUT OF RANGE,Room Temperature High Alarm - NORMAL
+ELEC3,ELEC3_BATTERY_LOW_ALM,OutOfRangeAlarmExt,High,OutOfRange,10,Battery Low Alarm - OUT OF RANGE,Battery Low Alarm - NORMAL
+ELEC3,ELEC3_SPD_ALM,OutOfRangeAlarmExt,Medium,OutOfRange,5,Surge Protection Device Alarm - OUT OF RANGE,Surge Protection Device Alarm - NORMAL
