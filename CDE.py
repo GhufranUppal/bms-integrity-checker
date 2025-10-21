@@ -87,3 +87,6 @@ split_point_names(
     r'C:\GHUFRAN\Old\PythonScripting\Niagara\Evap_Cooler_Points.xlsx',
     r'C:\GHUFRAN\Old\PythonScripting\Niagara\Evap_Cooler_Points_1.xlsx'
 )
+
+# A FUNCTION THAT CREATES A DICTIONARY OF EQUIPMENT AND THEIR POINTS
+# FOR DIFFERENT EQUIPMENTS LIKE DAHU, CHW, AHU, PUMP, ETC.
