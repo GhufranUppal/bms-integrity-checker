@@ -34,40 +34,6 @@ Failure to adhere to design specifications may result in operational issues, red
 
 ---
 
-## Process Flow Overview
-
-The following flow diagrams illustrate the **end-to-end process** for extracting, validating, and ensuring 100% compliance of alarm and trend configurations in Tridium Niagara.
-
-### 1. Exporting As-Built Configurations from Tridium Niagara
-The first flow (shown below) explains how to extract alarms and trend configurations from the Niagara Supervisor Server.
-
-![Niagara Configuration Export Flow](Niagara_Flow_Chart.png)
-
-**Process Summary:**
-1. Log into the **Tridium Niagara Supervisor Server**.
-2. Connect to an individual **JACE Supervisory Controller** in the Niagara network tree.
-3. If **Report Service** is not configured for the JACE, configure it.
-4. Use **BQL Queries** to pull alarm and trend configuration data.
-5. Export the reports as **CSV files** and save them locally.
-6. These files serve as the **as-built configurations** for further evaluation.
-
----
-
-### 2. Running Validation Tool for Compliance Check
-The second flow diagram (below) illustrates the validation workflow using the Python-based tool.
-
-![Niagara Validation Workflow](Niagara_Flow_Chart_1.png)
-
-**Process Summary:**
-1. Launch the **Tridium Python Alarm and Trend Validation Tool**.  
-2. Download and save the **Control Point List** (design requirements) from project design documents.  
-3. Point the GUI interface to the exported Niagara alarm and trend CSV files, and to the Control Point List.  
-4. Run the **Validation Script** to automatically compare as-built configurations against design requirements.  
-5. Review the generated validation report for deviations.  
-6. Fix any configuration mismatches and rerun the validation until **100% compliance** is achieved.
-
----
-
 ## Validation Workflow
 
 Follow these steps to validate Tridium Niagara alarms and trends:
