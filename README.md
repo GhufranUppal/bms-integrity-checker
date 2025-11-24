@@ -17,15 +17,72 @@ Common alarm types include:
 
 Below is a high-level architecture diagram illustrating the full pipeline from Niagara exports to final validation output:
 
-```mermaid
-flowchart TD
-    A[CPL (Design Requirements)] -->|Imported as Excel| E[Validation Engine]
-    B[Niagara JACE/Supervisor] -->|Export Alarm & Trend CSVs| C[As-Built Niagara Data]
-    C --> E
-    E --> F[Rule Evaluation<br>(Alarm Class, Delay, Trends)]
-    F --> G[Excel Report Generation]
-    G --> H[Final Compliance Output]
+# System Architecture
+
+The Niagara Alarm & Trend Validation Tool operates as a simple, deterministic pipeline.  
+At a high level, it takes:
+
+- **As-built alarm & trend configuration** from Niagara (CSV)
+- **Design intent** from the Control Point List (CPL, Excel)
+
+and produces a **validated configuration report** in Excel.
+
+The block diagram below shows the main components and data flow:
+
 ```
++-----------------------------+         +-----------------------------+
+|  Control Point List (CPL)   |         |    Niagara JACE/Supervisor  |
+|  - Design requirements      |         |    - Alarm configuration    |
+|  - Point names & metadata   |         |    - Trend configuration    |
+|  (Excel)                    |         |    (CSV via BQL/Reports)    |
++--------------+--------------+         +--------------+--------------+
+               \                                      /
+                \                                    /
+                 \                                  /
+                  v                                v
+              +------------------------------------------+
+              |           Data Extraction Layer          |
+              |  - Read CPL (Excel)                      |
+              |  - Read Alarm/Trend CSVs                |
+              +----------------------+-------------------+
+                                     |
+                                     v
+              +------------------------------------------+
+              |           Normalization Layer            |
+              |  - Clean & uppercase point names         |
+              |  - Remove symbols / brackets             |
+              |  - Normalize delays and formats          |
+              +----------------------+-------------------+
+                                     |
+                                     v
+              +------------------------------------------+
+              |          Point Matching Engine           |
+              |  - Tokenize names (Niagara & CPL)        |
+              |  - Match as-built points to CPL entries  |
+              |  - Detect missing / extra points         |
+              +----------------------+-------------------+
+                                     |
+                                     v
+              +------------------------------------------+
+              |            Rule Evaluation Layer         |
+              |  - Alarm Class vs Notification Level     |
+              |  - Delay vs CPL Delay                    |
+              |  - Trend enablement / intervals          |
+              +----------------------+-------------------+
+                                     |
+                                     v
+              +------------------------------------------+
+              |             Reporting Layer              |
+              |  - Generate Excel reports                |
+              |  - Red = mismatch, Green = match         |
+              |  - Yellow = manual review required       |
+              +----------------------+-------------------+
+                                     |
+                                     v
+              +------------------------------------------+
+              |       Final Compliance Report (Excel)    |
+              +------------------------------------------+
+
 
 ### Pipeline Stages
 
