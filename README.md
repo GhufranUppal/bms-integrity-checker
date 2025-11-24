@@ -3,8 +3,6 @@
 This tool validates **Tridium Niagara (Siemens / Schneider)** alarm and trend configurations against the project **Control Point List (CPL)**.  
 It uses a lightweight **PySimpleGUI** interface and a clearly defined **pipeline architecture**.
 
-## Introduction
-
 In Niagara N4, alarms are configured directly on control points using **Alarm Palettes** and various **Alarm Extensions**.  
 Common alarm types include:
 
@@ -12,10 +10,6 @@ Common alarm types include:
 - **Numeric Alarm Extension** – evaluates thresholds on numeric values.  
 - **OutOfRange / Limit Alarms** – high/low conditions tied to analog values.  
 - **Fault / Status Alarms** – based on device health or communication status.  
-
-# System Architecture
-
-Below is a high-level architecture diagram illustrating the full pipeline from Niagara exports to final validation output:
 
 # System Architecture
 
