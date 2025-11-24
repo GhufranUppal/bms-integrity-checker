@@ -1,164 +1,98 @@
-# Niagara Point Validation Tool – IN PROGRESS
+# Niagara Alarm & Trend Validation Tool
 
-## Overview
-This repository contains a Python-based tool for validating **Tridium Niagara** point configurations. The tool performs automated quality checks on alarms, trends, and naming conventions to ensure compliance with design standards and consistency across systems.
+This tool validates **Tridium Niagara (Siemens / Schneider)** alarm and trend configurations against the project **Control Point List (CPL)**.  
+It uses a lightweight **PySimpleGUI** interface and a clearly defined **pipeline architecture**.
 
-Alarms in a **Tridium Niagara System** are typically configured by dragging and dropping alarm extensions from the **Alarm Palette**. Common alarm extensions include:
+## Introduction
 
-- **OutOfRangeAlarmExt**  
-  Used for **Analog Inputs (AI)** and **Analog Values (AV)** such as:
-  - Cold Aisle Temperature Sensors  
-  - Pressure Sensors  
-  - Supply Air Temperature Sensors  
+In Niagara N4, alarms are configured directly on control points using **Alarm Palettes** and various **Alarm Extensions**.  
+Common alarm types include:
 
-- **BooleanChangeOfStateAlarmExt**  
-  Used for **Binary Inputs (BI)** and **Binary Values (BV)** such as:
-  - Power Fail Alarm  
-  - Fan Trip Alarm  
-  - Chiller Trip Alarm  
+- **Boolean Alarm Extension** – triggers when a boolean point evaluates to a specific state.  
+- **Numeric Alarm Extension** – evaluates thresholds on numeric values.  
+- **OutOfRange / Limit Alarms** – high/low conditions tied to analog values.  
+- **Fault / Status Alarms** – based on device health or communication status.  
 
-### Key Alarm Configurations
-- **Notification Class**: `Critical`, `High`, `Medium`, `Low`  
-- **Delays**  
-- **High and Low Limits** (for temperature, pressure, etc.)  
+# System Architecture
 
-# Importance of Accurate Alarm System Configurations
+Below is a high-level architecture diagram illustrating the full pipeline from Niagara exports to final validation output:
 
-It is essential that these configurations are implemented **accurately** and in full compliance with the **design requirements**. Proper configuration ensures the alarm system operates as intended, which is critical for:
-
-- **Reliability**: The system must function consistently under all conditions.
-- **Safety**: Incorrect configurations can lead to missed or false alarms, compromising building security.
-- **Trust**: Building Operators rely on the system to protect occupants and assets. Any deviation from the specified design could undermine confidence in its effectiveness.
-
-Failure to adhere to design specifications may result in operational issues, reduced performance, and diminished trust in the alarm system. Therefore, strict compliance with configuration standards is not just a technical requirement—it is a cornerstone of system integrity and operator confidence.
-
----
-
-## Process Flow Overview
-
-The following flow diagrams illustrate the **end-to-end process** for extracting, validating, and ensuring 100% compliance of alarm and trend configurations in Tridium Niagara.
-
-### 1. Exporting As-Built Configurations from Tridium Niagara
-The first flow (shown below) explains how to extract alarms and trend configurations from the Niagara Supervisor Server.
-
-![Niagara Configuration Export Flow](Niagara_Flow_Chart.png)
-
-**Process Summary:**
-1. Log into the **Tridium Niagara Supervisor Server**.
-2. Connect to an individual **JACE Supervisory Controller** in the Niagara network tree.
-3. If **Report Service** is not configured for the JACE, configure it.
-4. Use **BQL Queries** to pull alarm and trend configuration data.
-5. Export the reports as **CSV files** and save them locally.
-6. These files serve as the **as-built configurations** for further evaluation.
-
----
-
-### 2. Running Validation Tool for Compliance Check
-The second flow diagram (below) illustrates the validation workflow using the Python-based tool.
-
-![Niagara Validation Workflow](Niagara_Flow_Chart_1.png)
-
-**Process Summary:**
-1. Launch the **Tridium Python Alarm and Trend Validation Tool**.  
-2. Download and save the **Control Point List** (design requirements) from project design documents.  
-3. Point the GUI interface to the exported Niagara alarm and trend CSV files, and to the Control Point List.  
-4. Run the **Validation Script** to automatically compare as-built configurations against design requirements.  
-5. Review the generated validation report for deviations.  
-6. Fix any configuration mismatches and rerun the validation until **100% compliance** is achieved.
-
----
-
-## Validation Workflow
-
-Follow these steps to validate Tridium Niagara alarms and trends:
-
-### 1. Database Setup
-Ensure that **control point names** in the Tridium N4 database include the strings from the **Point Name** column in the **Construction Data Exchange List**.
-
-### 2. Extract Configuration Data
-- Write **BQL Queries** to pull **Alarm** and **Trend** configuration data from the Tridium Niagara database.
-- Export the **as-built alarm and trend configuration data** as **CSV files**.
-
-### 3. Run Validation Script
-- Feed the extracted CSV files into the **Niagara Validation Script**.
-- The script generates an **Excel report** with color-coded results:
-
-| Color   | Meaning                                                                 |
-|---------|-------------------------------------------------------------------------|
-| **Red**    | Alarm attribute does **NOT** match design requirements (e.g., Notification Class) |
-| **Yellow** | Alarm attribute could **NOT** be validated by the tool             |
-| **Green**  | Alarm attribute is validated and matches design requirements        |
-
----
-
-## Example Output
-The validation report will help identify:
-- Misconfigured alarms
-- Attributes that need manual review
-- Fully compliant configurations
-
----
-
-## Outputs
-
-After execution, the tool generates the following reports:
-
-- **Niagara_Point_Validation_Report.xlsx** – Consolidated report listing all points validated, with highlights for mismatches and missing alarms.
-- **Niagara_Validation_Overview.xlsx** – Summary sheet with total, compliant, and non-compliant points, along with pie chart visualization.
-
----
-
-## Example Niagara Hierarchy
-```
-Niagara Station
-├── AHU
-│   ├── AHU01
-│   │   ├── SupplyTemp (AI)
-│   │   ├── ReturnTemp (AI)
-│   │   ├── FanStatus (BI)
-│   │   ├── SupplyFanCmd (BO)
-│   │   └── Alarms
-├── CRAH
-│   ├── CRAH01
-│   ├── CRAH02
-├── ER
-│   ├── ER01
-│   │   ├── SmokeDetStatus
-│   │   ├── TempSensor
-│   │   └── Alarms
-└── CHWS
-    ├── Pump01
-    ├── Pump02
-    └── Valves
+```mermaid
+flowchart TD
+    A[CPL (Design Requirements)] -->|Imported as Excel| E[Validation Engine]
+    B[Niagara JACE/Supervisor] -->|Export Alarm & Trend CSVs| C[As-Built Niagara Data]
+    C --> E
+    E --> F[Rule Evaluation<br>(Alarm Class, Delay, Trends)]
+    F --> G[Excel Report Generation]
+    G --> H[Final Compliance Output]
 ```
 
----
+### Pipeline Stages
 
-## Requirements
+1. **Data Extraction**
+   - Export Alarm and Trend CSVs from Niagara JACE/Supervisor using Report Service & BQL.
+   - Export the CPL (Excel) from project documentation.
 
-```bash
-pip install pandas openpyxl xlsxwriter PySimpleGUI matplotlib
-```
+2. **Normalization**
+   - Standardize naming, clean characters, and normalize alarm/trend attributes.
 
-Python 3.8 or later is recommended.
+3. **Point Naming & Matching**
+   - Niagara alarm/trend configurations usually contain prefixes and tokens similar to those in the design CPL.
+   - The tool tokenizes names and matches Niagara points to CPL entries.
 
----
+4. **Rule Evaluation**
+   - Compare Alarm Class, Notification Level, Delay, and Trend settings.
+   - Identify mismatches, missing points, and compliant entries.
 
-## Example Usage
-
-```bash
-python niagara_point_validation.py
-```
-
-1. Launch the GUI window.
-2. Select the Siemens or Schneider option.
-3. Browse and select the Alarm, Trend, and CDE Point List files.
-4. Choose an output folder.
-5. Run the validation process.
-
-The tool will automatically generate summary reports in the selected directory.
+5. **Report Generation**
+   - Produce Excel reports with highlighting for mismatches, matches, and items needing review.
 
 ---
 
-## Summary
-This tool simplifies the validation of multi-vendor Niagara databases used in data centers. It ensures configuration integrity, trend alignment, and alarm consistency between Siemens, Schneider, and Tridium systems — helping engineers reduce commissioning effort and maintain compliance with data center operational standards.
+# Architecture Diagrams
+
+### Niagara Configuration Export Flow
+![Niagara Export Flow](Niagara_Flow_Chart.png)
+
+### Validation Workflow
+![Validation Pipeline](Niagara_Flow_Chart_1.png)
+
+---
+
+# PySimpleGUI Interface
+
+The GUI provides:
+
+- File inputs for:  
+  - Alarm File 1 (Boolean alarms)  
+  - Alarm File 2 (Numeric alarms)  
+  - Trend File  
+  - CPL (Control Point List)  
+- Buttons for vendor-specific validation:  
+  - **Point Validation (Siemens)**  
+  - **Point Validation (Schneider)**  
+- Preview buttons for in-GUI data inspection  
+- Progress bar for long validation tasks  
+
+---
+
+# Usage
+
+1. Launch the GUI.
+2. Select Alarm/Trend CSVs and CPL file.
+3. Choose Siemens or Schneider validation.
+4. Select output folder.
+5. Run validation.
+6. Excel reports are generated automatically.
+
+---
+
+# Output Summary
+
+The generated Excel report highlights:
+- **Red** → Configuration does NOT match CPL  
+- **Green** → Fully compliant  
+- **Yellow** → Partially validated (manual review needed)  
+
+This tool provides a repeatable, engineering-focused method to validate Niagara alarm and trend configurations against the CPL.
+
