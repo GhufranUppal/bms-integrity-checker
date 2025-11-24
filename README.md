@@ -3,13 +3,15 @@
 This tool validates **Tridium Niagara (Siemens / Schneider)** alarm and trend configurations against the project **Control Point List (CPL)**.  
 It uses a lightweight **PySimpleGUI** interface and a clearly defined **pipeline architecture**.
 
+## Introduction
+
 In Niagara N4, alarms are configured directly on control points using **Alarm Palettes** and various **Alarm Extensions**.  
 Common alarm types include:
 
-- **Boolean Alarm Extension** – triggers when a boolean point evaluates to a specific state.  
-- **Numeric Alarm Extension** – evaluates thresholds on numeric values.  
-- **OutOfRange / Limit Alarms** – high/low conditions tied to analog values.  
-- **Fault / Status Alarms** – based on device health or communication status.  
+- **Boolean Alarm Extension** – triggers when a boolean point evaluates to a specific state.
+- **Numeric Alarm Extension** – evaluates thresholds on numeric values.
+- **OutOfRange / Limit Alarms** – high/low conditions tied to analog values.
+- **Fault / Status Alarms** – based on device health or communication status.
 
 # System Architecture
 
@@ -76,9 +78,9 @@ The block diagram below shows the main components and data flow:
               +------------------------------------------+
               |       Final Compliance Report (Excel)    |
               +------------------------------------------+
+```
 
-
-### Pipeline Stages
+## Pipeline Stages
 
 1. **Data Extraction**
    - Export Alarm and Trend CSVs from Niagara JACE/Supervisor using Report Service & BQL.
@@ -102,10 +104,10 @@ The block diagram below shows the main components and data flow:
 
 # Architecture Diagrams
 
-### Niagara Configuration Export Flow
+## Niagara Configuration Export Flow
 ![Niagara Export Flow](Niagara_Flow_Chart.png)
 
-### Validation Workflow
+## Validation Workflow
 ![Validation Pipeline](Niagara_Flow_Chart_1.png)
 
 ---
@@ -114,16 +116,16 @@ The block diagram below shows the main components and data flow:
 
 The GUI provides:
 
-- File inputs for:  
-  - Alarm File 1 (Boolean alarms)  
-  - Alarm File 2 (Numeric alarms)  
-  - Trend File  
-  - CPL (Control Point List)  
-- Buttons for vendor-specific validation:  
-  - **Point Validation (Siemens)**  
-  - **Point Validation (Schneider)**  
-- Preview buttons for in-GUI data inspection  
-- Progress bar for long validation tasks  
+- **File inputs for:**
+  - Alarm File 1 (Boolean alarms)
+  - Alarm File 2 (Numeric alarms)
+  - Trend File
+  - CPL (Control Point List)
+- **Buttons for vendor-specific validation:**
+  - Point Validation (Siemens)
+  - Point Validation (Schneider)
+- **Preview buttons** for in-GUI data inspection
+- **Progress bar** for long validation tasks
 
 ---
 
@@ -141,9 +143,8 @@ The GUI provides:
 # Output Summary
 
 The generated Excel report highlights:
-- **Red** → Configuration does NOT match CPL  
-- **Green** → Fully compliant  
-- **Yellow** → Partially validated (manual review needed)  
+- **Red** → Configuration does NOT match CPL
+- **Green** → Fully compliant
+- **Yellow** → Partially validated (manual review needed)
 
 This tool provides a repeatable, engineering-focused method to validate Niagara alarm and trend configurations against the CPL.
-
