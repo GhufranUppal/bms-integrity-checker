@@ -1,0 +1,7 @@
+pandas
+numpy
+PySimpleGUI
+xlwings
+openpyxl
+xlsxwriter
+matplotlib
