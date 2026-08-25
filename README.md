@@ -17,6 +17,10 @@ In Niagara N4, alarms are configured directly on control points using **Alarm Pa
 
 Because these settings are entered by hand during commissioning, they can drift from the approved design. This tool provides a **repeatable, engineering-focused** way to catch those differences before handover.
 
+For **existing sites**, the tool also lets you compare the current as-built configuration against the latest iteration of the design standard (CPL), identifying gaps and allowing the configurations to be updated so as to align with the current standard.
+
+> **Note:** This validation depends on the **Control Point List following a standard template**, so that the tool can reliably parse the exported output and perform the comparison. If the CPL does not conform to the expected template structure, the parsing and validation steps will not produce accurate results.
+
 # System Architecture
 
 The tool operates as a simple, deterministic pipeline. It takes two inputs:
