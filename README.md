@@ -303,6 +303,12 @@ pip install -r requirements.txt
 
 # Usage
 
+Start the application by running:
+
+```bash
+python Niagara_Alarm_Validation_rev.1.py
+```
+
 1. Launch the GUI.
 2. Select the Alarm/Trend CSVs and the CPL file.
 3. Choose Siemens or Schneider validation to match the project vendor.
