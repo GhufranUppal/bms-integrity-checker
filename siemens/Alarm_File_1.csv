@@ -1,0 +1,7 @@
+Equipment,Point_Name,Alarm_Extension,Alarm_Class,Alarm_Type,Delay,High_Limit,Low_Limit,Dead_Band,offNormal_Text,Normal_Text
+AHU1,AHU1FANSTATUS,BooleanChangeOfStateAlarmExt,High,Boolean,,,,,OFF NORMAL,NORMAL
+AHU1,AHU1ESTOP,BooleanChangeOfStateAlarmExt,High,Boolean,,,,,OFF NORMAL,NORMAL
+AHU2,AHU2FANSTATUS,BooleanChangeOfStateAlarmExt,High,Boolean,,,,,OFF NORMAL,NORMAL
+AHU2,AHU2ESTOP,BooleanChangeOfStateAlarmExt,High,Boolean,,,,,OFF NORMAL,NORMAL
+AHU3,AHU3FANSTATUS,BooleanChangeOfStateAlarmExt,High,Boolean,,,,,OFF NORMAL,NORMAL
+AHU3,AHU3ESTOP,BooleanChangeOfStateAlarmExt,High,Boolean,,,,,OFF NORMAL,NORMAL

@@ -4,7 +4,7 @@ The Niagara Alarm & Trend Validation Tool automatically checks that the **alarm 
 
 Instead of manually comparing exported Niagara configurations against design documentation point-by-point, this tool loads both sources, matches the points, applies validation rules, and produces a colour-coded Excel report showing exactly where the as-built system agrees with — or deviates from — the design intent.
 
-It runs as a lightweight **PySimpleGUI** desktop application built around a simple, deterministic **pipeline architecture**.
+It runs as a lightweight **Tkinter** desktop application built around a simple, deterministic **pipeline architecture**.
 
 ## Introduction
 
@@ -101,6 +101,28 @@ The block diagram below shows the main layers and how data flows through them:
 
 ---
 
+# Siemens vs Schneider — Why They Are Separate Validations
+
+Even though both vendors are commissioned in the same Niagara N4 framework, **Siemens and Schneider are treated as two distinct validation runs** — the tool exposes a dedicated **Point Validation (Siemens)** and **Point Validation (Schneider)** button for exactly this reason.
+
+The difference comes down to **point-name formatting**. Each vendor exports its point names using a different naming convention, so the raw strings coming out of Niagara do not look the same even when they represent the same physical point:
+
+| Vendor | Point-name style | Example (as exported) |
+| ---------- | ---------------------------------- | ----------------------------- |
+| **Siemens**   | Concatenated, **no separators**    | `AHU1EVAP1STG1FLOWALM`         |
+| **Schneider** | **Underscore-delimited** tokens    | `AHU1_EVAP1_STG1_FLOW_ALM`     |
+| **CPL (design)** | Bracketed tokens               | `[EVAP1][STG1][FLOW][ALM]`     |
+
+Because the two vendors segment their names differently, the normalization and tokenization step has to account for each style before it can be matched back to the bracketed CPL point name. To keep matching deterministic and auditable, the two vendors are run **independently**:
+
+- A **Siemens** run normalizes the concatenated, separator-free names.
+- A **Schneider** run normalizes the underscore-delimited names.
+- Both are then reduced to the same canonical token set and compared against the CPL.
+
+Running them separately avoids cross-vendor false matches, keeps each vendor’s report self-contained, and makes it obvious which naming convention produced any given deviation. Functionally the validation rules (alarm class, delay, CAT high/low limits and dead-band, trend settings) are identical — only the point-name parsing differs.
+
+---
+
 # Process Flow Diagrams
 
 ## Niagara Configuration Export Flow
@@ -171,7 +193,7 @@ This process describes how the exported data is checked against design intent. T
 
 ---
 
-# PySimpleGUI Interface
+# Tkinter Interface
 
 The application provides a simple desktop interface so no command line is required:
 
@@ -188,12 +210,38 @@ The application provides a simple desktop interface so no command line is requir
 
 ---
 
+# Screenshots
+
+The screenshots below are captured from the two vendor validation runs and are stored alongside each vendor’s sample data.
+
+## Siemens
+
+**Selecting the exported Niagara files (Siemens):**
+
+![Siemens – pointing the tool to the exported file paths](siemens/Siemens/pointing_to_paths.png)
+
+**Validation report generated (Siemens):** note the concatenated, separator-free point names such as `AHU1FANSTATUS` and `AHU1EVAP2STG2FLOWALM`.
+
+![Siemens – validation complete with generated report](siemens/Siemens/Report_Generated.png)
+
+## Schneider
+
+**Selecting the exported Niagara files (Schneider):**
+
+![Schneider – pointing the tool to the exported file paths](schneider/Schneider/Pointing_to_Path.png)
+
+**Validation report generated (Schneider):** note the underscore-delimited point names such as `AHU1_FAN_STATUS` and `AHU1_EVAP1_STG1_FLOW_ALM`.
+
+![Schneider – validation complete with generated report](schneider/Schneider/Generating_Report.png)
+
+---
+
 # Requirements
 
 ## Environment
 
 - **Python 3.8+** (Windows recommended)
-- **Microsoft Excel** installed \u2014 required by `xlwings` for report generation and formatting
+- **Microsoft Excel** (or any `.xlsx` viewer) to open the generated report
 
 ## Python Packages
 
@@ -202,14 +250,13 @@ The tool depends on the following third-party packages:
 | Package        | Purpose                                             |
 | -------------- | --------------------------------------------------- |
 | `pandas`       | Load and manipulate CSV / Excel data                |
-| `numpy`        | Numeric operations and array handling               |
-| `PySimpleGUI`  | Desktop graphical user interface                    |
-| `xlwings`      | Read/write and format Excel reports                 |
-| `openpyxl`     | Read/write `.xlsx` files and apply cell fills       |
+| `openpyxl`     | Read/write `.xlsx` files, apply cell fills, chart   |
 | `xlsxwriter`   | Write formatted Excel output                        |
-| `matplotlib`   | Plotting / visualization support                    |
+| `matplotlib`   | Optional in-GUI results chart                       |
 
-Standard-library modules (`os`, `re`, `time`, `threading`, `warnings`, `pathlib`) require no installation.
+The desktop interface is built with **Tkinter/ttk**, which ships with the Python standard library — no separate GUI package is required.
+
+Standard-library modules (`os`, `re`, `threading`, `tkinter`, `pathlib`) require no installation.
 
 ## Installation
 

@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Editor
+.vscode/
+
+# Excel/Office lock & temp files
+~$*.xlsx
+~$*.vsdx
+~$$*.~vsdx
