@@ -237,6 +237,39 @@ The screenshots below are captured from the two vendor validation runs and are s
 
 ---
 
+# Why Portfolio-Wide Standardization Is a Prerequisite
+
+This tool is fundamentally a **comparison engine**: it can only tell you whether the as-built configuration matches the design when both sides of the comparison speak the same language. That requirement scales up into a broader principle — **for this solution to work reliably across an entire building portfolio, the underlying databases and point-naming conventions must be standardized.** The reasoning below explains why this is not merely a nice-to-have, but a structural precondition for the tool to deliver value at scale.
+
+## 1. The tool matches on structure, not meaning
+
+The matching engine does not "understand" that `AHU1EVAP1STG1FLOWALM` and `[EVAP1][STG1][FLOW][ALM]` describe the same physical point — it infers that by **tokenizing predictable naming patterns** and reducing them to a canonical token set. This works precisely because each vendor follows a *consistent* convention (Siemens concatenated, Schneider underscore-delimited, CPL bracketed). The moment a site deviates from its convention — ad-hoc abbreviations, inconsistent ordering, free-text descriptions, or one-off spellings — the tokenizer can no longer align the names, and matches silently fail or, worse, produce **false matches**. Standardized naming is what makes deterministic, auditable matching possible.
+
+## 2. Non-standard data multiplies engineering effort per site
+
+If every building in a portfolio uses its own naming scheme and its own database layout, then each site effectively needs its own bespoke parsing and normalization logic. What should be a single, reusable validation pipeline degrades into **N custom integrations for N buildings**. Standardization inverts this: one normalization layer, one set of rules, and one report format can be applied unchanged across the entire estate. The cost of validation then grows *linearly with configuration*, not *combinatorially with naming variety*.
+
+## 3. Portfolio-level insight depends on comparable data
+
+The real strategic value of a tool like this is not validating a single JACE — it is being able to say, across dozens of sites, *"which buildings deviate most from standard, and where?"* That kind of cross-site analytics is only meaningful when the data is **structurally comparable**. If Building A calls a sensor `SAT` and Building B calls it `SUPPLYAIRTEMP` and Building C calls it `T-101`, no aggregate view can be trusted. A standardized point-naming taxonomy and a consistent database schema turn a collection of isolated sites into a **queryable portfolio**.
+
+## 4. Standardization protects against configuration drift over time
+
+Alarm and trend settings are entered by hand during commissioning and are frequently modified during a building's life. Without an enforced standard, each modification is an opportunity for divergence, and over years the estate fragments into incompatible dialects. A shared naming standard and database convention act as a **contract**: they define what "correct" looks like, give this tool a stable target to validate against, and make it possible to detect and correct drift before it accumulates.
+
+## 5. Practical requirements for portfolio readiness
+
+To operate this tool across a portfolio, the following should be standardized up front:
+
+- **Point-naming convention** — a single, documented token grammar (equipment → subsystem → measurement → function) applied identically across all vendors and sites, with the vendor-specific delimiter being the *only* permitted variation.
+- **Control Point List (CPL) template** — a fixed column structure and bracketed token format, so the parser can read any project's CPL without per-site adjustment.
+- **Database / export schema** — consistent CSV export structure from Niagara (same fields, same headers, same units) so extraction logic never has to be rewritten per building.
+- **Alarm class & notification taxonomy** — a shared dictionary of alarm classes, notification levels, and delay conventions, so rule evaluation means the same thing everywhere.
+
+> **In short:** the tool automates the *comparison*, but it cannot automate away the need for a *common language*. Standardized databases and point naming are the foundation that lets a single validation solution scale from one building to an entire portfolio — turning what would be dozens of one-off checks into one repeatable, trustworthy, estate-wide process.
+
+---
+
 # Requirements
 
 ## Environment
