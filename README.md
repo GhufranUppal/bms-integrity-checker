@@ -70,7 +70,7 @@ The block diagram below shows the main layers and how data flows through them:
               |            Rule Evaluation Layer         |
               |  - Alarm Class vs Notification Level     |
               |  - Delay vs CPL Delay                    |
-              |  - CAT: High/Low Limit + Dead Band       |
+              |  - Analog: High/Low Limit + Dead Band    |
               |  - Trend interval (shown for reference)  |
               +----------------------+-------------------+
                                      |
@@ -96,7 +96,7 @@ The block diagram below shows the main layers and how data flows through them:
 
 3. **Point Naming & Matching** – Tokenize the Niagara and CPL names (which usually share prefixes and tokens) and match each as-built point to its corresponding CPL entry, flagging any that are missing or extra.
 
-4. **Rule Evaluation** – Compare Alarm Class, Notification Level, and Delay for every matched point; for CAT analog sensors also compare the High Limit, Low Limit, and Dead Band against the CPL. The trend interval is carried through to the report for reference. This identifies mismatches, missing points, and fully compliant entries.
+4. **Rule Evaluation** – Compare Alarm Class, Notification Level, and Delay for every matched point; for analog points also compare the High Limit, Low Limit, and Dead Band against the CPL. The trend interval is carried through to the report for reference. This identifies mismatches, missing points, and fully compliant entries.
 
 5. **Report Generation** – Write Excel reports with colour highlighting for mismatches, matches, and items that need manual review.
 
